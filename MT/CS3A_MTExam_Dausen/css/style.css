@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template: 
+        "header header" 15vh
+        "hero hero" 20vh
+        "sidebar main" auto
+        "footer footer" 15vh
+        / 1fr 3fr;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    grid-area: header;
+    color: white;
+}
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(360deg ,rgb(186, 186, 186), rgb(45, 45, 45) 120%);
+    color: white;
+}
+
+main {
+    grid-area: main;
+    padding: 1em;
+}
+
+aside {
+    grid-area: sidebar;
+    background: rgb(186, 186, 186);
+    padding: 2em;
+    width: 20vw;
+}
+
+footer {
+    grid-area: footer;
+}
+
+header, footer {
+    background: rgb(69, 69, 69);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+
+.navbar {
+    display: flex;
+    gap: 1em;
+}
+
+header .navbar {
+    justify-self: flex-end;
+}
+
+footer .navbar {
+    justify-self: center;
+}
+
+.btn {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid black;
+    background-color: rgb(186, 186, 186);
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(45, 45, 45);
+}
+
+.photo_container {
+    padding: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.home-section {
+    margin: 1rem;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+form > input, form > textarea {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    font-family: "Montserrat", sans-serif;
+    resize: none;
+}
+
+aside > h2, aside > h3, aside > p {
+    margin-top: 0.5em;
+}
+
+.feature_presentation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    gap: 1em;
+}
+
+.feature_product {
+    padding: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+}
+
+.buttonAdd, .buttonRem {
+    padding: 0.5em;
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: rgb(186, 186, 186);
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.buttonAdd:hover {
+    color: white;
+    background-color: rgb(0, 70, 14);
+}
+
+.buttonRem:hover {
+    color: white;
+    background-color: rgb(79, 4, 4);
+}
+
+aside li {
+    list-style-image: url(../assets/pokeball-icon.png);
+    margin-top: 10px;
+}
