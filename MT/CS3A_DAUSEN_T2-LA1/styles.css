@@ -1,0 +1,82 @@
+
+/* reusable button class */
+.btn {
+    color: white;
+    background-color: #3e2f84;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 1em 2em;
+    border-radius: 20px;
+    text-align: center;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.intro {
+    background-color: rgb(34, 9, 81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    padding: 2em;
+}
+
+
+header, footer {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* parent and child elements */
+.sample-content p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sample-content h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+footer p {
+    font-style: italic;
+}
+
+footer a {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.cards {
+    display: grid;
+    grid-template: 
+        "img title" auto
+        "img content" auto / 1fr 3fr;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+    padding: 1.5em;
+    grid-column-gap: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.content-img {
+    grid-area: img;
+    max-width: 100%;
+}
+
+.card-title{
+    grid-area: title;
+    margin: 0;
+}
+
+.card-content{
+    grid-area: content;
+}

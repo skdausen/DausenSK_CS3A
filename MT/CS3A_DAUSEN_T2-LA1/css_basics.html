@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <!-- internal css -->
+    <style>
+        /* style all anchor tags */
+        a{
+            background-color:#3e2f84;
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* id selector to style specific elements */
+        #header-title, #footer-content, #intro{
+            color: white;
+        }
+        #intro-title {
+            margin: 0;
+        }
+        #main-title, #links{
+            color: #000;
+        }
+        
+    </style>
+    <!-- external css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- html structure with header, main, and footer -->
+    <header>
+        <h1 id="header-title">CSS BASICS</h1>
+    </header>
+
+    <div class="intro">
+        <h1 id="intro-title">WebDevLab T2-LA1: Web CSS</h1>
+        <p id="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, velit in suscipit minima corrupti, 
+            libero illo eos temporibus aperiam nulla dolorem, quam perferendis quibusdam sapiente totam mollitia.</p>
+    </div>
+
+    <main>
+        <h2 id="main-title">Sean Kelly Dausen</h2>
+        <div class="sample-content cards">
+            <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                class="content-img" alt="sample-img">
+            <h2 class="card-title">Sample content title</h2>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ipsam minima voluptatum ullam quam atque? 
+                    Assumenda ea blanditiis consequuntur eos. Commodi doloribus dolore minus laudantium eaque, saepe asperiores consectetur et.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nostrum inventore aut vel 
+                    et quis, a, nam perferendis error aperiam doloremque accusamus sit earum! Consequuntur ipsum quasi eligendi provident tempore!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni consequuntur culpa voluptates sit impedit! 
+                    Consequatur quas praesentium accusamus, quis, in odio nesciunt placeat odit ex perferendis quisquam recusandae iste distinctio!</p>
+            </div>
+        </div>
+
+        <div>
+            <h2 id="links">Check these out!</h2>
+            <!-- anchor tags -->
+            <a href="https://www.google.com/" class="btn">Google</a>
+            <a href="https://www.youtube.com/">Youtube</a>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://github.com/">Github</a>
+            <a href="https://discord.com/">Discord</a>
+            <a href="https://www.pexels.com/">Pexels</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p id="footer-content">&copy; 2025 sample only</p>
+        <!-- inline css to change the color of an anchor tag-->
+        <a href="mailto:example@gmail.com" class="footer-content" style=" color: blue; background-color: transparent;">Contact Us</a>
+    </footer>
+</body>
+</html>
