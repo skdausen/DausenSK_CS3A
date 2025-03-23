@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <h2>Timberland Boat Shoes</h2>
+            <img src="assets/bshoes.jpg" alt="Timberland Boat Shoes">
+            <h3>Price: Php 7,500.00</h3>
+            <button onclick="addToCart('boatshoes', 7500.00)" class="buttonAdd">Add To Cart</button>
+            <button onclick="removeFromCart('boatshoes', 7500.00)" class="buttonRem">Remove From Cart</button>
+        </div>
+        <div class="product">
+            <h2>BODE Cardigan</h2>
+            <img src="assets/cardigan.jpg" alt="BODE Cardigan">
+            <h3>Price: Php 1,500.00</h3>
+            <button onclick="addToCart('cardigan', 1500.00)" class="buttonAdd">Add To Cart</button>
+            <button onclick="removeFromCart('cardigan', 1500.00)" class="buttonRem">Remove From Cart</button>
+        </div>
+        <div id="cart">
+            <h2>Customer's Cart</h2>
+            <ul id="products">
+
+            </ul>
+            <div id="total"></div>
+        </div>
+        <script src="js/cart.js"></script>
+    </div>
+</body>
+</html>
