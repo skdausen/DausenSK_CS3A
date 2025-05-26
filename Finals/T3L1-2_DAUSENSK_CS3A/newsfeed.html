@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>socialSphere</title>
+    <link rel="icon" href="assets/logo-bg.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo-container">
+                <img src="assets/name_stroke.png" alt="socialSphere">
+            </div>
+            <div class="logout">
+                <label for="logout" class="btn">Log Out</label>
+                <div class="profile-picture" id="my-profile-picture">
+                    <img src="assets/profile-pic.png" alt="profile picture">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+     <main>
+        <div class="container main-container">
+
+            <!-- main left -->
+             <div class="main-left">
+
+                <!-- profile -->
+                <a href="#" class="profile">
+                    <div class="profile-picture" id="my-profile-picture">
+                        <img src="assets/profile-pic.png" alt="profile picture">
+                    </div>
+                    <div class="profile-handle">
+                        <h4>Patroclus</h4>
+                        <p class="text-gry">
+                            @patroclus10
+                        </p>
+                    </div>
+                </a>
+
+                <!-- aside bar -->
+                <aside>
+                    <a class="menu-item active">
+                        <span><img src="assets/svg/home-svgrepo-com.svg" alt="home"></span><h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><img src="assets/svg/hashtag-svgrepo-com.svg" alt="explore"></span><h3>Explore</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><img src="assets/svg/bell-alt-svgrepo-com.svg" alt="notifications"></span>
+                        <small class="notfy-counter">2</small>
+                        <h3>Notifications</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><img src="assets/svg/message-circle-svgrepo-com.svg" alt="messages"></span>
+                        <small class="notfy-counter">3+</small>
+                        <h3>Messages</h3>
+                    </a>
+                    <a class="menu-item">
+                        <span><img src="assets/svg/analytics-graph-chart-svgrepo-com.svg" alt="analytics"></span><h3>Analytics</h3>
+                    </a>
+
+                    <!-- Add Post Button -->
+                     <label for="add-post" class="btn btn-primary btn-lg">Make a Post</label>
+                </aside>
+             </div>
+
+            <!-- main middle -->
+             <div class="main-middle">
+                <div class="middle-container">
+                    <!-- Post input -->
+                    <form class="add-post">
+                        <div class="profile-picture" id="my-profile-picture">
+                            <img src="assets/profile-pic.png" alt="profile picture">
+                        </div>
+                        <input type="text" placeholder="Care to share something?" name="" id="add-post">
+                        <input type="submit" value="Post" class="btn btn-primary">
+                    </form>
+
+                    <!-- Feed -->
+                     <div class="feeds">
+                        <div class="feed">
+                            <!-- Top Feed -->
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="assets/profile-pic3.png" alt="profile picture">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Sparkle_Boom</h3>
+                                        <div class="time text-gry">
+                                            <small><span>1 Day Ago</span></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <img src="assets/svg/ellipsis-svgrepo-com.svg" alt="edit">
+                                </div>
+                            </div>
+                            <!-- Feed Image -->
+                             <div class="feed-img">
+                                <h2>All the world's a stage! And I'm here to blow it up! ehe~ </h2>
+
+                             </div>
+                            <!-- Feed Action -->
+                             <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment"></i></span>
+                                    <span><i class="fa fa-share"></i></span>
+                                </div>
+                             </div>
+
+                             <!-- Caption -->
+                              <div class="caption">
+                                <!-- <p><b>Helen_of_Troy</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                <span class="hashtag">#wow</span></p> -->
+                              </div>
+                        </div>
+                        <div class="feed">
+                            <!-- Top Feed -->
+                            <div class="feed-top">
+                                <div class="user">
+                                    <div class="profile-picture">
+                                        <img src="assets/profile-pic2.jpg" alt="profile picture">
+                                    </div>
+                                    <div class="info">
+                                        <h3>Achilles</h3>
+                                        <div class="time text-gry">
+                                            <small><span>2 Days Ago</span></small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit">
+                                    <img src="" alt="edit">
+                                </div>
+                            </div>
+                            <!-- Feed Image -->
+                             <div class="feed-img">
+                                <img src="assets/feed-img.jpg" alt="feed image">
+                                
+                             </div>
+                            <!-- Feed Action -->
+                             <div class="action-button">
+                                <div class="interaction-button">
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-comment"></i></span>
+                                    <span><i class="fa fa-share"></i></span>
+                                </div>
+                             </div>
+
+                             <!-- Caption -->
+                              <div class="caption">
+                                <p><b>Helen_of_Troy</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                <span class="hashtag">#wow</span></p>
+                              </div>
+                        </div>
+                     </div>
+                </div>
+             </div>
+
+            <!-- main right -->
+             <div class="main-right">
+             </div>
+        </div>
+     </main>
+</body>
+</html>
