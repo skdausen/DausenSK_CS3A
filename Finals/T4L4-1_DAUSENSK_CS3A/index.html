@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAUSEN</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <h2 class="mb-4">User Login</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="role" class="form-label">Select Role:</label>
+                    <select class="form-select" id="role" required>
+                        <option value="">-- Choose Role --</option>
+                        <option value="Department Head">Department Head</option>
+                        <option value="Faculty">Faculty</option>
+                        <option value="Student Officer">Student Officer</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Enter Password:</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div id="output" class="mt-4 text-dark fw-bold"></div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
