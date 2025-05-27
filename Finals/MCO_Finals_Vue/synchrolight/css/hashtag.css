@@ -1,0 +1,99 @@
+/* HASHTAG CSS */
+
+/* IMPORTING POPPINS FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* COLOR VARIABLES */
+:root {
+    --accent-1: #A6DCFB;
+    --accent-2: rgba(166, 220, 251, 0.7);
+    --accent-3: #85cdf6;
+    --accent-4: #0c6192;
+    --bg-color: #F3EFD8;
+}
+
+/* GLOBAL BODY STYLING */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--accent-4);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* MODAL WRAPPER CONTAINER */
+.modal-style-container {
+    width: 100%;
+    max-width: 720px;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* HEADINGS STYLING */
+h2, h4 {
+    color: var(--accent-4);
+    font-weight: 600;
+}
+
+/* LINK STYLE */
+a {
+    color: var(--accent-4);
+    text-decoration: none;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* CARD STYLE */
+.card {
+    background-color: #fff;
+    border: 1px solid var(--accent-3);
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* CHART CANVAS BACKGROUND */
+canvas {
+    background-color: var(--accent-2);
+    border-radius: 14px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* BACK BUTTON STYLE */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    background: var(--accent-4);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+.back-btn:hover {
+    background: #08496c;
+}
+
+/* HASHTAG LINK STYLE */
+.hashtag {
+    color: var(--accent-4);
+    text-decoration: none;
+    font-weight: 600;
+}
+.hashtag:hover {
+    text-decoration: underline;
+}
+
+/* MUTED SMALL TEXT */
+small.text-muted {
+    font-size: 0.85rem;
+}

@@ -1,0 +1,67 @@
+:root{
+    --accent-1: #A6DCFB;
+    --accent-2: #FDFD96;
+    --accent-3: #85cdf6;
+    --accent-4: #0c6192;
+    --bg-color: #F3EFD8;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type='email'],
+input[type='number'] {
+    width: 310px !important;
+    padding: 10px;
+    padding-right: 0;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input[type='submit'] {
+    background-color: var(--accent-2);
+    color: var(--accent-4);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+input[type='submit']:hover {
+    background-color: var(--accent-1);
+}
+
+p.success {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+}
+
+p.error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}

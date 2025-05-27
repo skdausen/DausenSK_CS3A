@@ -1,0 +1,289 @@
+/* FEED CSS */
+
+/* IMPORTING POPPINS FONT FROM GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* COLOR VARIABLES */
+:root{
+    --accent-1: #A6DCFB;     /* PASTEL BLUE */
+    --accent-2: #FDFD96;     /* PASTEL YELLOW */
+    --accent-3: #85cdf6;     /* SOFT BLUE */
+    --accent-4: #0c6192;     /* DARK BLUE */
+    --bg-color: #F3EFD8;     /* CREAMY BACKGROUND */
+}
+
+/* APPLY POPPINS FONT AND RESET MARGINS/PADDING */
+html,
+body {
+    font-family: 'Poppins', sans-serif !important; /* SET DEFAULT FONT */
+    justify-content: center;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body {
+    height: 100%;
+    background-color: var(--bg-color) !important; /* SET BACKGROUND COLOR */
+    overflow-x: hidden;
+}
+
+/* ===== HEADER ===== */
+header{
+    max-width: 100vw;
+    grid-area: header;
+    background-color: var(--accent-1); /* HEADER BACKGROUND COLOR */
+    padding-bottom: 1rem;
+    align-items: flex-start !important;
+    position: sticky; /* MAKE HEADER STICKY ON SCROLL */
+    top: 0;
+    z-index: 1000; /* ENSURE HEADER STAYS ON TOP */
+}
+header img {
+    height: 75px;
+    margin-right: 1rem;
+}
+
+/* NAVIGATION LINKS IN HEADER */
+.navbar a{
+    padding: 0 1rem;
+    color: var(--accent-4);
+    font-weight: bolder;
+}
+.navbar a:hover{
+    color: white;
+}
+
+/* ===== LEFT-SIDEBAR/LEFT NAV ===== */
+.left-sidebar{
+    height: 100%;
+    border-right: 3px solid var(--accent-1); /* DIVIDER LINE */
+    position: fixed; /* KEEP SIDEBAR FIXED ON SCROLL */
+    left:  0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+}
+.left-sidebar ul li{
+    transition: background-color 0.3s ease, border-radius 0.3s ease; 
+}
+.left-sidebar ul li a{
+    color: var(--accent-4);
+    font-weight: bold;
+    transition: color 0.3s ease; 
+}
+.left-sidebar ul li:hover{
+    border-radius: 12px;
+    background-color: var(--accent-4); /* HOVER EFFECT */
+}
+.left-sidebar ul li:hover a{
+    color: white;
+}
+
+/* ===== MAIN CONTENT===== */
+.main{
+    min-height: 80vh !important;
+    margin: auto;
+}
+
+/* POST WRITING AREA AND CONTAINER */
+.postbox-area, .post-container{
+    max-width: 60vw; /* LIMIT WIDTH OF POSTS */
+}
+
+/* POST BOX AND POST DISPLAY */
+.post-box, .post-content{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* SHADOW EFFECT */
+}
+
+/* POST BOX */
+.post-box{
+    height: 240px;
+    grid-template-rows: 1fr auto;
+}
+
+/* USER PHOTO AREA */
+.photo {     
+    grid-row: 1;  
+    justify-content: end;
+    align-content: center;
+}
+.photo img{ 
+    height: 50px;
+    width: 50px;
+    border-radius: 100%; /* CIRCULAR IMAGE */
+    border: 2px solid black;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+/* POST TEXTAREA */
+.post-box form textarea{
+    grid-row: 1;
+    grid-column: 2;
+    resize: none;
+    background: #f0f0f0;
+    height: 90px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* IMAGE UPLOAD BUTTON INSIDE POST BOX */
+.image-upload {
+    display: inline-block;
+    cursor: pointer;
+}
+.image-upload input[type="file"] {
+    display: none;
+}
+.image-upload-icon {
+    font-size: 20px;
+    color: #555;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #eaeaea;
+}
+.image-upload-icon:hover {
+    background-color: #ccc;
+}
+
+/* SUBMIT POST BUTTON */
+.post-button{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+/* BUTTONS INSIDE POSTS */
+:is(.post-button, .content-buttons) button{
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: var(--accent-1);
+    color: var(--accent-4);
+}
+
+/* LIST OF POSTS */
+.posts-list{
+    height: auto;
+}
+
+/* POST CONTAINER LIMIT HEIGHT */
+.post-container{
+    max-height: 600px;
+}
+
+/* INDIVIDUAL POST CONTENT */
+.post-content{
+    height: 350px;
+    max-height: 500px;
+    grid-template-rows: 100px 1fr auto;
+}
+.post-content .post-user{
+    grid-row: 1;
+    grid-column: 2;
+    margin-bottom: 1rem;
+}
+.post-details{
+    grid-row: 2;
+    grid-column: 2;
+}
+.post-img{
+    display: flex;
+    height: 100px;
+    max-height: 300px;
+    max-width: 500px;
+    border: none;
+    border-radius: 12px;
+}
+
+/* SOCIAL INTERACTION BUTTONS (LIKE, COMMENT, ETC.) */
+.content-buttons{
+    grid-row: 3; 
+    grid-column: 2;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap; 
+    margin-top: 1rem;
+}
+
+/* HASHTAGS IN POSTS */
+a.hashtag{
+    color: blue;
+    text-decoration: none;
+}
+
+/* ===== RIGHT SIDEBAR/ LIST OF USERS ===== */
+.right-sidebar{
+    height: 100%;
+    border-left: 3px solid var(--accent-1); /* DIVIDER LINE */
+    position: fixed;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+}
+.user-list img{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.right-sidebar h6{
+    font-size: 18px;
+    font-weight: bold;
+}
+.right-sidebar a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    position: fixed; /* STICK TO BOTTOM */
+    left: 0;
+    bottom: 0;
+    color: var(--accent-4);
+    border-right: 3px solid var(--accent-1);
+    z-index: 1001;
+}
+footer p{
+    font-size: 12px;
+}
+
+/* ===== MODAL FOR POST VIEWING ===== */
+.modal-body{
+    max-height: 70vh; /* LIMIT MODAL SCROLL AREA */
+    overflow-y: auto;
+}
+.modal-body .user{
+    grid-template-columns: 12% auto;
+    gap: 0.5rem;
+}
+.modal-body .user-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+}
+.modal-body .user img{ 
+    grid-row: 1;
+    grid-column: 1;
+    border: 2px solid black;
+}
+.modal-body .user-details{
+    grid-row: 1;
+    grid-column: 2;
+}
+.modal-content{
+    overflow: hidden;
+}
+.modal-content img{
+    overflow: hidden;
+    max-height: 340px;
+    max-width: 100%;
+    object-fit: contain;
+}
